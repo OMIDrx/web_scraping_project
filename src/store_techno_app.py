@@ -7,7 +7,7 @@ url = 'https://www.technolife.com/category/mobile'
 response = requests.get(url)
 
 soup = BeautifulSoup(response.content, 'html.parser')
-# print(soup)
+
 
 descriptions = soup.select('section.relative.w-full h2')
 prices = soup.select('section.relative.w-full p.font-semiBold.leading-5')
